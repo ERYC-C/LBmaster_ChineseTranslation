@@ -1,0 +1,506 @@
+FrameWidgetClass "{6A6A9D3CF9E9642D}" {
+ Name "rootFrame"
+ scriptclass "LBMenuPopulator"
+ {
+  PanelWidgetClass "{6A6A9D3C999F5B4B}" {
+   Name "Panel0"
+   color 0.653 0.653 0.653 0.392
+   position 0 0
+   size 400 560
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    TextWidgetClass "{6A6A9D3CBC1F7660}" {
+     Name "Text0"
+     position 0 0
+     size 1 40
+     halign center_ref
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     text "#lb_bc_ui_manage_codelock_modded"
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass "{6A6A9D3B56141CF0}" {
+     Name "Text1"
+     position 0 40
+     size 1 20
+     halign left
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     text " #lb_bc_ui_players_list_modded"
+    }
+    TextListboxWidgetClass "{6A6A9D3B1FD42314}" {
+     Name "list_players"
+     position 0 60
+     size 1 300
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     "title visible" 1
+     colums " #lb_bc_ui_player_modded;80%;#lb_bc_ui_level_modded;20%"
+     lines 14
+    }
+    ButtonWidgetClass "{6A6A9D3BD9A4CFF5}" {
+     Name "btn_apply"
+     position 0 360
+     size 0.33 20
+     halign right_ref
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     text "#lb_bc_apply_modded"
+    }
+    XComboBoxWidgetClass "{6A6A9D38C0070FAE}" {
+     Name "combo_perms"
+     position 0 360
+     size 0.66 20
+     halign left
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     items "Remove;Temp;Access;Admin;Co Owner;Owner"
+    }
+    TextWidgetClass "{6A6C67A0C87C4FB3}" {
+     Name "Text2"
+     position 0 400
+     size 1 20
+     halign left
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     text " #lb_bc_ui_code_settings_modded"
+    }
+    TextWidgetClass "{6A6C67A09C40B38B}" {
+     Name "Text3"
+     position 0 420
+     size 150 20
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "#lb_bc_ui_access_code_modded"
+     "text halign" right
+    }
+    EditBoxWidgetClass "{6A6C67A08D1C3D4D}" {
+     Name "edit_code"
+     position 150 420
+     size 100 20
+     halign left
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+    }
+    ButtonWidgetClass "{6A6C67A0AD004397}" {
+     Name "btn_toggle_code"
+     position 250 420
+     size 20 20
+     halign left
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass "{6A6C96E41DDF0502}" {
+       Name "Image0"
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       image0 "set:ccgui_enforce image:Icon40Scanner"
+       mode additive
+       "src alpha" 1
+       {
+        PanelWidgetClass "{6A6C96E4025BC31F}" {
+         Name "Panel0"
+         ignorepointer 1
+         position 0 0
+         size 0.8 0.8
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         {
+          ImageWidgetClass "{6A6C96E41DDF06D3}" {
+           Name "img_hide_code"
+           ignorepointer 1
+           position 0 0
+           size 2 2
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           image0 "set:ccgui_enforce image:MapDestroyed"
+           mode additive
+           "src alpha" 1
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    ButtonWidgetClass "{6A6C67AF52F0A231}" {
+     Name "btn_apply_code"
+     position 0 420
+     size 1 20
+     halign right_ref
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     scriptclass "LBGapHandler"
+     text "#lb_bc_apply_modded"
+     {
+      PanelWidgetClass "{6A99204D7CA747EE}" {
+       Name "panel_color_apply_code"
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       style LB_Clean_outline
+      }
+     }
+     {
+      ScriptParamsClass {
+       gapHorizontal 275
+      }
+     }
+    }
+    TextWidgetClass "{6A6C96E2FFAF52FB}" {
+     Name "Text4"
+     position 0 440
+     size 150 20
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "#lb_bc_ui_guest_code_modded"
+     "text halign" right
+     {
+      CheckBoxWidgetClass "{6A6C96E5B2F2B6AF}" {
+       Name "chckbx_guest_code"
+       position 0 0
+       size 20 20
+       halign left
+       valign top
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+      }
+     }
+    }
+    EditBoxWidgetClass "{6A6C96E2FFAF52A6}" {
+     Name "edit_guest"
+     position 150 440
+     size 100 20
+     halign left
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+    }
+    ButtonWidgetClass "{6A6C96E2FFAF524A}" {
+     Name "btn_toggle_guest"
+     position 250 440
+     size 20 20
+     halign left
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass "{6A6C96E312509F99}" {
+       Name "Image0"
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       image0 "set:ccgui_enforce image:Icon40Scanner"
+       mode additive
+       "src alpha" 1
+       {
+        PanelWidgetClass "{6A6C96E43426859E}" {
+         Name "Panel0"
+         ignorepointer 1
+         position 0 0
+         size 0.8 0.8
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         {
+          ImageWidgetClass "{6A6C96E43426859B}" {
+           Name "img_hide_guest"
+           ignorepointer 1
+           position 0 0
+           size 2 2
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           image0 "set:ccgui_enforce image:MapDestroyed"
+           mode additive
+           "src alpha" 1
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    ButtonWidgetClass "{6A6C96E2FFAF5390}" {
+     Name "btn_apply_guest"
+     position 0 440
+     size 1 20
+     halign right_ref
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     scriptclass "LBGapHandler"
+     text "#lb_bc_apply_modded"
+     {
+      PanelWidgetClass "{6A99204D6860E857}" {
+       Name "panel_color_apply_quest"
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       style LB_Clean_outline
+      }
+     }
+     {
+      ScriptParamsClass {
+       gapHorizontal 275
+      }
+     }
+    }
+    ButtonWidgetClass "{6A6C96E2A8B8ACBC}" {
+     Name "btn_transfer"
+     position 0 380
+     size 0.5 20
+     halign right_ref
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     text "#lb_bc_ui_transfer_owner_modded"
+    }
+    ButtonWidgetClass "{6A6C96E3791C9E46}" {
+     Name "btn_remove_lock"
+     position 0 0
+     size 0.5 20
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     text "#lb_bc_ui_remove_codelock_modded"
+     {
+      PanelWidgetClass "{6A6C96E4D8CFF5C6}" {
+       Name "Panel0"
+       ignorepointer 1
+       color 1 0 0 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       style LB_Clean_outline
+      }
+     }
+    }
+    TextWidgetClass "{6A6C96E5844C018D}" {
+     Name "txt_guest_code_uses"
+     position 0 460
+     size 150 20
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "#lb_bc_ui_guest_code_uses_modded"
+     "text halign" right
+    }
+    EditBoxWidgetClass "{6A6C96E5844C016D}" {
+     Name "edit_guest_uses"
+     position 150 460
+     size 100 20
+     halign left
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ButtonWidgetClass "{6A6EA385C577072A}" {
+       Name "btn_inc_uses"
+       position 0 0
+       size 20 0.5
+       halign right_ref
+       valign top
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       {
+        ImageWidgetClass "{6A6EA385CAFA30EC}" {
+         Name "Image0"
+         ignorepointer 1
+         position 0 0
+         size 0.8 0.8
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         image0 "set:dayz_gui image:specialization_arrow"
+         mode additive
+         "src alpha" 1
+         "stretch mode" center
+         "flip v" 1
+        }
+       }
+      }
+      ButtonWidgetClass "{6A6EA385B3F78B83}" {
+       Name "btn_dec_uses"
+       position 0 0
+       size 20 0.5
+       halign right_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       {
+        ImageWidgetClass "{6A6EA385B3F78B8A}" {
+         Name "Image0"
+         ignorepointer 1
+         position 0 0
+         size 0.8 0.8
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         image0 "set:dayz_gui image:specialization_arrow"
+         mode additive
+         "src alpha" 1
+         "stretch mode" center
+        }
+       }
+      }
+     }
+    }
+    ButtonWidgetClass "{6A6C96E5AEBFB77A}" {
+     Name "btn_apply_guest_uses"
+     position 0 460
+     size 1 20
+     halign right_ref
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     scriptclass "LBGapHandler"
+     text "#lb_bc_apply_modded"
+     {
+      ScriptParamsClass {
+       gapHorizontal 275
+      }
+     }
+    }
+    CheckBoxWidgetClass "{6A6C96E89EBB315E}" {
+     Name "chckbx_group_access"
+     visible 0
+     position 0 500
+     size 1 20
+     halign left
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     text "Group Has Access"
+    }
+    CheckBoxWidgetClass "{6A6C96E88DE5C107}" {
+     Name "chckbx_requests"
+     position 0 480
+     size 1 20
+     halign left
+     valign top
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     text "#lb_bc_ui_allow_request_modded"
+    }
+   }
+  }
+ }
+ {
+  ScriptParamsClass {
+  }
+ }
+}

@@ -1,0 +1,2 @@
+# LBmaster_ChineseTranslation
+DayzMod-LBMasterMod中文翻译，包含layout以及动作。尽量使其适配中文的ui。
