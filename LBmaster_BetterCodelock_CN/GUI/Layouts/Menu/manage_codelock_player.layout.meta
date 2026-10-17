@@ -1,0 +1,13 @@
+MetaFileClass {
+ Name "{DD268F5034402AAA}LBmaster_BetterCodelock/gui/layouts/menu/manage_codelock_player.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass LINUX : PC {
+  }
+ }
+}
